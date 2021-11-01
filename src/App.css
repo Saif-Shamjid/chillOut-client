@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.cp {
+  cursor: pointer;
+}
+
+.color-cp {
+  color: rgb(86, 135, 1);
+}
