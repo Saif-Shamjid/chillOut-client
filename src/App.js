@@ -7,6 +7,7 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import AuthProvider from './context/AuthProvider';
 import AddAplan from './pages/AddAplan/AddAplan';
 import AllOrders from './pages/AllOrders/AllOrders';
+import Buy from './pages/Buy/Buy';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import MyOrders from './pages/MyOrders/MyOrders';
@@ -30,8 +31,8 @@ function App() {
                 <Home></Home>
               </Route>
 
-              <PrivateRoute path="/service/:serviceId">
-                {/* <SingleService></SingleService> */}
+              <PrivateRoute path="/buy/:key">
+                <Buy></Buy>
               </PrivateRoute>
 
               <PrivateRoute path="/myorders">

@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "chillout-cb0bf"
+  },
+  "rewrites": [ {
+    "source": "**",
+    "destination": "/index.html"
+  } ]
+}

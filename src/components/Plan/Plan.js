@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Plan = (props) => {
-    const{picture,name,about,balance
-    } = props.singleplan;
+    const{_id,picture,name,about,balance} = props.singleplan;
+
+    const uri = `/buy/${_id}`;
 
     return (
         <div className='col-md-4'>
@@ -18,7 +19,7 @@ const Plan = (props) => {
             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
             <h5 className="card-title color-cp">Price: {balance}$</h5>
-            <div className="card-footer"><Link to='' className='coustom-btn'>Buy</Link></div>
+            <div className="card-footer"><Link to={uri} className='coustom-btn'>Buy</Link></div>
         </div>
     </div>
     );
